@@ -14,7 +14,7 @@ def generateDatabase():
         wordlist = []
         letters = "abcdefghi"
         for i in range(1, 10):
-            combinations = itertools.permutations(letters, 9)
+            combinations = itertools.permutations(letters, i)
             for combination in combinations:
                 word = ''.join(combination)
                 f.write(word + '\n')
